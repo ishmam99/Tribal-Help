@@ -1,0 +1,439 @@
+/*================================================================================
+	Item Name: Modern Admin - Clean Bootstrap 4 Dashboard HTML Template
+	Version: 1.0
+	Author: PIXINVENT
+	Author URL:
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@500&display=swap');
+
+@font-face {
+	font-family: 'SolaimanLipi';
+    font-family: 'Baloo Da 2';
+	src: url('{{ asset('assets/fonts/SolaimanLipi.ttf') }}');
+    src: url('{{ asset('assets/fonts/BalooDa2-SemiBold.ttf') }}');
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #d0ddd0;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 50rem;
+}
+
+:root {
+    --primary-color: #c06907;
+    --secondary-color: #9f5000;
+    --light-color: #fff;
+    --dark-color: #000;
+    --offwhite-color: #f6f6f6;
+    --text-color: #666;
+}
+
+	/* ====== Global CSS ===== */
+body {
+	font-size: 14px;
+	font-family: 'Baloo Da 2', cursive;
+	font-weight: 600;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'SolaimanLipi', sans-serif;
+	font-weight: 600;
+    line-height: 1.4;
+	letter-spacing: 1.5px;
+	color: #555;
+}
+.box {
+	padding: 15px 70px;
+}
+.main-content {
+	background: #f2f2f2!important;
+}
+.card {
+	background: var(--light-color);
+	border: none;
+    border-radius: 15px;
+    margin-bottom: 0;
+    padding: 25px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+.card .card-body {
+    border-radius: 15px;
+    background: var(--light-color);
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+    padding: 25px 15px;
+}
+.table td, .table th {
+	padding: 0.9rem;
+}
+.table th {
+	font-weight: 600;
+}
+input.form-control, textarea.form-control, select.form-control {
+	padding: 0.5rem 0.8rem;
+	font-size: 14px;
+	border: 1px solid var(--primary-color);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+input.form-control::placeholder, textarea.form-control::placeholder, select.form-control::placeholder {
+	color: var(--text-color);
+}
+input.form-control:focus, textarea.form-control:focus, select.form-control:focus {
+	box-shadow: 0 0 0 4px rgba(0, 159, 157, 0.4);
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+    color: #888!important;
+}
+select.form-control {
+	color: var(--text-color);
+}
+textarea.form-control {
+	min-height: 120px;
+}
+input[type="search"] {
+	padding: 0.2rem 0.8rem;
+}
+.button-margin {
+	margin-top: 20px;
+}
+.button {
+	height: 50px;
+    width: 200px;
+    font-size: 14px;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: none;
+    border: none;
+}
+.theme_button {
+    background: var(--primary-color)!important;
+    border-radius: 50rem;
+    color: var(--light-color);
+    border: none;
+    box-shadow: none;
+    transition: 0.4s all ease;
+    -webkit-transition: 0.4s all ease;
+}
+.theme_button:hover {
+    background: #902400!important;
+}
+.modal-footer .button {
+    width: 85px;
+    height: 35px;
+}
+.bg-color {
+	background-color: var(--primary-color);
+}
+.font-color {
+	color: var(--primary-color);
+}
+#data-table .card-body {
+	overflow-x: auto;
+}
+.page-title-wrapper .page-title-icon i {
+    color: var(--primary-color);
+}
+.app-page-title .page-title-icon {
+    justify-content: center;
+}
+
+/* ==================
+	// Main	header
+===================== */
+.bg-chartbg  {
+	background: var(--primary-color)!important;
+}
+.wrapper .page-wrap .app-sidebar.colored .sidebar-content {
+    background-color: var(--primary-color);
+}
+.wrapper .page-wrap .app-sidebar.colored .sidebar-header {
+    background-color: var(--primary-color);
+}
+.wrapper .page-wrap .app-sidebar.colored .sidebar-content .nav-container .navigation-main .nav-item .submenu-content {
+    background-color: #902400;
+}
+.header_title h3 {
+	padding-top: 0;
+	color: var(--light-color);
+    text-align: center;
+}
+.top-menu .nav-link:hover {
+	background: none;
+}
+.wrapper .header-top .top-menu .nav-link:hover,
+.wrapper .header-top .top-menu .nav-link:hover,
+.wrapper .header-top .top-menu .nav-link,
+.wrapper .header-top .top-menu .header-search .input-group .input-group-addon {
+    background: none!important;
+    color: var(--offwhite-color)!important;
+}
+.wrapper .header-top .top-menu .header-search .input-group .input-group-addon {
+    padding: 6px 10px 2px 0px;
+}
+.wrapper .header-top .top-menu .header-search .input-group .input-group-addon.search-close {
+    padding: 6px 0px 2px 10px;
+}
+.wrapper .header-top .top-menu .header-search input {
+	box-shadow: none;
+}
+.dropdown .nav-link {
+    display: inline-flex;
+    align-items: center;
+}
+.dropdown-menu.dropdown-menu-right {
+    overflow-x: auto;
+}
+.wrapper .page-wrap .main-content {
+    margin-top: 70px;
+}
+
+/*----------------------------------------*/
+/*  Sidebar CSS
+/*----------------------------------------*/
+
+#main-menu-navigation a span {
+    white-space: normal;
+    line-height: 1.6;
+}
+
+/*----------------------------------------*/
+/*  LIST CSS
+/*----------------------------------------*/
+
+#data-table .card-header {
+    background: var(--primary-color);
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+#data-table th, #data-table td {
+    text-align: center;
+}
+.dataTables_length, .dataTables_filter, .dataTables_info, .dataTables_paginate {
+    margin: 8px 0!important;
+    padding: 0;
+}
+.single-line-table td, .single-line-table th {
+    white-space: nowrap;
+}
+#data-table .card-body {
+    border-radius: 0 0 15px 15px;
+}
+.table tbody td .table-actions a {
+    color: var(--white-color);
+    font-size: 13px;
+}
+.table-actions a {
+    border-radius: 50rem;
+}
+#alt-pg-dt_wrapper {
+    overflow-x: auto;
+}
+.card .card-body .dataTables_wrapper .dataTable {
+    margin: 0!important;
+}
+
+/*----------------------------------------*/
+/*  Userlist CSS
+/*----------------------------------------*/
+
+a.button {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+}
+a.button:hover {
+    color: #fff;
+}
+
+	/* ====== Dashboard page CSS ===== */
+
+.wrapper {
+	overflow: hidden;
+}
+#dash-background {
+    width: 100%;
+    padding-left: 240px;
+    margin-top: 60px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.no-padding {
+	padding-left: 0px!important;
+}
+select.custom-select.custom-select-sm.form-control.form-control-sm {
+	padding: 0 25px;
+}
+.main-content .app-page-title{
+    background: #00bcd412;
+    padding: 20px;
+    margin: -30px -30px 35px -30px;
+}
+#cards {
+    margin-bottom: 30px;
+}
+.card_item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    background: var(--light-color);
+    border-radius: 15px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+}
+.card_item .card_text {
+    color: var(--text-color);
+}
+.card_item .card_image i {
+    font-size: 35px;
+    color: var(--primary-color);
+}
+#charts {
+    width: 100%;
+}
+#charts .chart_item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    background: var(--light-color);
+    border-radius: 15px;
+}
+
+/* ====== footer CSS ===== */
+
+footer span {
+    font-size: 13px;
+}
+
+	/* ====== Case create CSS ===== */
+
+p.heading {
+	color: #fff;
+	display: inline-block;
+	padding: 4px 15px;
+	background-color: #444;
+	border-radius: 35px;
+	margin-bottom: 20px;
+}
+
+	/* ====== Create User CSS ===== */
+
+.edit-button {
+	height: 30px;
+	width: 75px;
+	padding: 4px;
+}
+
+	/* ====== Small devices ===== */
+
+@media (max-width: 1100px) {
+	.box {
+		padding: 15px!important;
+	}
+	#dash-overall {
+	    margin-top: -130px;
+	}
+}
+
+    /* ====== laptop devices ===== */
+
+@media (max-width: 992px) {
+    .wrapper .page-wrap .main-content {
+        margin-top: 100px
+    }
+    .card {
+        padding: 15px
+    }
+    .container-fluid {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    header .header_main {
+        flex-wrap: wrap;
+    }
+    header .top-menu {
+        order: 1;
+        margin: 5px 0;
+    }
+    .header_title {
+        width: 100%;
+        order: 0;
+    }
+    .header_title h3 {
+        margin-bottom: 10px;
+    }
+    #user_module {
+        order: 2;
+        margin: 5px 0;
+    }
+    .main-content .app-page-title {
+        margin: -15px -10px 25px -10px;
+    }
+}
+
+    /* ====== mobile devices ===== */
+
+@media (max-width: 560px) {
+    body {
+        font-size: 0.88rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        letter-spacing: 0;
+    }
+    h3 {
+        font-size: 1.50rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    .wrapper .header-top {
+        position: static;
+    }
+    .main-content .app-page-title {
+        margin: -30px -10px 25px -10px;
+        padding: 20px 0;
+    }
+    .app-page-title .page-title-icon {
+        font-size: 1.8rem;
+        width: 50px;
+        height: 50px;
+        margin: 0 15px 0 0;
+    }
+    .button {
+        height: 45px;
+        width: 150px;
+        font-size: 13px
+    }
+    .card {
+        padding: 0
+    }
+    .card .card-body {
+        padding: 20px 10px;
+    }
+    .wrapper .page-wrap .main-content {
+        margin-top: 0;
+    }
+    .header-top .header-search.open input {
+        width: 130px!important;
+    }
+    .wrapper .header-top .top-menu .header-search .input-group .input-group-addon {
+        padding: 6px 10px 6px 0px;
+    }
+    .wrapper .page-wrap .footer {
+        padding: 20px 10px;
+    }
+
+}

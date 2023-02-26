@@ -1,0 +1,230 @@
+@media (max-width: 1150px) { 
+	.about_item .preface_text, .about_item .about_text {
+	    padding: 70px 20px;
+	}
+
+}	
+/* Medium Layout: 1280px. */
+@media (max-width: 992px) { 
+	.section_margin {
+	    margin: 30px 0;
+	}
+	.logo a img {
+    	max-width: 80px;
+	}
+	header .header_area {
+	    flex-wrap: wrap;
+	}
+	.header_area .logo {
+	    order: 1;
+	}
+	.header_area nav {
+	    order: 2;
+	}
+	.header_area .main_title {
+	    order: 0;
+	    width: 100%;
+	    background-color: var(--light-color);
+	}
+	#about {
+	    grid-template-columns: 1fr;
+	}
+	.about_item .preface_text, .about_item .about_text {
+	    padding: 40px 70px;
+	}
+	.info_box {
+	    margin: 10px 0;
+	}
+	.info_box .info_para {
+	    height: 200px;
+	}
+	#gallery {
+	    grid-template-columns: 4fr;
+	    padding: 40px 10px;
+	}
+	footer {
+	    grid-template-columns: 1fr 1fr;
+	}
+	    
+}
+/* Tablet Layout: 768px. */
+@media (max-width: 768px) { 
+	.modal-body {
+	    padding: 0.9rem;
+	}
+	.modal-body ul {
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-column-gap: 1rem;
+	}
+	.header_area .main_title h1 {
+	    font-size: 32px;
+	}
+	.info_box .info_para {
+	    height: 180px;
+	}
+	.gallery_inner .gallery_area {
+	    grid-template-columns: 1fr 1fr 1fr;
+	}
+	.footer_content.links {
+	    order: 0;
+	}
+	.footer_content.hotline {
+	    order: 1;
+	}
+	.footer_content.comment {
+	    order: 2;
+	    grid-column: 1 / -1;
+	}
+    
+}
+/* Mobile Layout: 320px. */
+@media (max-width: 600px) { 
+	body {
+		background: #fff;
+		line-height: 1.5!important;
+	}
+	#scroll_to_top {
+	    bottom: 20px;
+	    right: 15px;
+	}
+	#scroll_to_top a {
+	    font-size: 12px
+	}
+	header .header_area {
+	    justify-content: center
+	}
+	.nav_top .nav_info .title {
+	    margin-right: 10px;
+	}
+	.call_to_action {
+		flex-direction: column;
+	}
+	.top_news marquee span {
+	    font-size: 17px;
+	}
+	.hero_text .call_to_action {
+	    flex-direction: column;
+	}
+	.header_area nav {
+		display: none
+	}
+	nav .nav_bottom {
+	    margin-top: 8px;
+	    margin-bottom: 5px;
+	}
+	.header_area .logo {
+	    order: 0;
+	}
+	.header_area .main_title {
+	    order: 1;
+	}
+	.logo a img {
+	    max-width: 70px;
+	}
+	.header_area .logo {
+	    padding: 5px;
+	}
+	.header_area .logo a {
+	    margin: 0 10px;
+	}
+	#hero_text h4 {
+	    font-size: 16px;
+	}
+	#hero_area .slider_info {
+	    align-items: flex-start;
+	    justify-content: center;
+	}
+	#searchbar_mobile {
+		display: block;
+	}
+	.about_item .preface_text, .about_item .about_text {
+	    padding: 40px 15px;
+	}
+	.info_box .info_para {
+	    height: 190px;
+	}
+    footer {
+	    padding: 35px 15px;
+	}
+	.modal-body ul {
+	    grid-column-gap: 0.4rem;
+	}
+
+}
+/* Mobile Layout: 320px. */
+@media (max-width: 480px) {
+	body {
+		font-size: 14px;
+	}
+	.about_item .preface_text, .about_item .about_text {
+	    padding: 40px 10px;
+	}
+	.heading {
+	    margin-bottom: 15px;
+	    letter-spacing: 0;
+	}
+	.nav_top .nav_info {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	.call_to_action a {
+    	padding: 9px 20px;
+	}
+	.top_news marquee span {
+	    font-size: 16px;
+	}
+	.nav_top .nav_info .number {
+	    line-height: 1.3;
+	}
+	.nav_top .nav_info .title {
+	    margin: 0
+	}
+	.nav_top .nav_info .title {
+	    align-self: center;
+	}
+	.top_news .news_heading span {
+	    font-size: 16px;
+	}
+	.hero_text h4 {
+	    font-size: 15px;
+	}
+	.about_item .preface_img img, .about_item .about_img img {
+	    width: 210px;
+	    height: 230px;
+	}
+	.info_box_heading h5 {
+	    font-size: 16px;
+	}
+	.info_box_heading .box_icon {
+	    width: 36px;
+	}
+	.info_box {
+	    padding: 5px;
+	}
+ 	#gallery {
+	    padding: 30px 10px;
+	    grid-gap: 0.4rem;
+	}
+	.gallery_inner .gallery_area {
+	    grid-template-columns: 1fr 1fr;
+	}
+	.info_box .info_box_heading {
+	    padding: 10px;
+	}
+	.info_box .info_para {
+	    padding: 10px;
+	    padding-top: 15px;
+	}
+
+}
+/* Wide Mobile Layout: 480px. */
+@media (max-width: 376px) { 
+	.nav_top .nav_info .title {
+	    margin-right: 5px;
+	}
+	#hero_area {
+		padding: 12px;
+	}
+}
